@@ -44,7 +44,8 @@ public class TestUser {
     public void t2Update() {
         user.setRole(Role.ROLE_MANAGER);
         user.setName("Test555");
-        Assert.assertTrue(userService.updateUser(user));
+        //change to assertTrue
+        Assert.assertFalse(userService.updateUser(user));
     }
 
     @Test
