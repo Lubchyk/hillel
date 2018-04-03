@@ -29,7 +29,7 @@ public class EmailService {
         String content = "";
         content = new String(Files.readAllBytes(file.toPath()));
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo("motruk.lubomyr88888@gmail.com");
+        mailMessage.setTo("motruk.lubomyr@gmail.com");
         mailMessage.setSubject("Report Top 3");
         mailMessage.setText(content);
         mailMessage.setFrom("lubchyk1613@gmail.com");
@@ -39,7 +39,7 @@ public class EmailService {
     @Bean("templateMessageAboutError")
     public SimpleMailMessage templateMessageAboutError() throws IOException {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo("motruk.lubomyr88888@gmail.com");
+        mailMessage.setTo("motruk.lubomyr@gmail.com");
         mailMessage.setSubject("Error Error Error");
         mailMessage.setText("Something about error");
         mailMessage.setFrom("lubchyk1613@gmail.com");
@@ -53,7 +53,7 @@ public class EmailService {
         javaMailSenderImpl.setPort(587);
         javaMailSenderImpl.setProtocol("smtp");
         javaMailSenderImpl.setUsername("lubchyk1613@gmail.com");
-        javaMailSenderImpl.setPassword("");
+        javaMailSenderImpl.setPassword("ml15357595**");
         Properties props = javaMailSenderImpl.getJavaMailProperties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
